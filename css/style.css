@@ -1,0 +1,83 @@
+body{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+#principal{
+    background:rgb(220, 220, 220);
+    background:linear-gradient(to right, #fefefe, #acacac);
+    border-bottom: #d6d6d6 2px solid;
+    
+    
+}
+
+.texto_principal{
+    color: rgb(0, 0, 100);
+    
+}
+
+.boton_principal1{
+    margin: auto;
+    background-color: #070035;
+}
+
+.boton_principal2{
+    margin: auto;
+    background-color: whitesmoke;
+    border-style: solid;
+}
+
+.porcentaje{
+    color: rgb(0, 0, 100);
+}
+
+.accion{
+    border: 2px solid #d6d6d6 ;
+}
+
+.plus{
+    background-color: #e1e1e1;
+}
+
+.Infor{
+    margin: auto;
+    border: 2px;
+    border-style: solid;
+    border-color: #cccccc;
+}
+
+.agregar{
+    color: white;
+    background-color: #070035;    
+}
+
+#btnaccion1{
+    background: #070035;
+    color: white;
+    
+}
+
+#btnaccion2{
+    background: #adadad;
+    color: white;    
+}
+
+.btngeneral{
+    background: #070035;
+    color: white;
+}
+
+#tablaingre{
+    display: none;
+}
+
+#tablaegre{
+    display: none;
+}
+
+.centeritem{
+    margin:auto;
+}
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora ingresos y gastos</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">   
+    
+</head>
+<body>
+    <div id="principal" class="row py-5">
+        <div>
+            <h1 class="text-center texto_principal">Presupuesto de</h1>
+        </div>
+        <div>
+            <h1 id="fecha" class="text-center texto_principal">
+            <script>
+            (function() {
+            var fechaencabezado = new Date().toLocaleDateString('sp-es', { year:"numeric", month:"long"});
+            document.write(fechaencabezado);
+            } ())  
+            </script>
+            </h1>
+        </div>
+        <div class="my-3">
+            <h1 id="total" class="text-center texto_principal">0</h1>
+        </div>
+        <div class="my-3">
+            <div class="col-sm-3 py-3 rounded-1 text-center text-light boton_principal1"><strong>INGRESOS: +<a id="ingresos">0</a></strong> </div>
+        </div>
+        <div class="my-3">
+            <div class="col-sm-3 py-3 rounded-1 text-center boton_principal2"><strong>EGRESOS: -<a id="egresos">0</a></strong> </div>
+        </div>     
+        <strong><p class="text-center texto_principal">Porcentaje de gasto: <span id="resultado" class="btngeneral rounded-2 px-2">0%</span></p></strong>
+    </div> 
+    <div class="row">
+        <div class="col-sm-6 pb-4 text-center accion">
+            <br>
+            <br>
+            <p class="texto_principal"><strong><span class="plus rounded-5 p-1 px-2">+</span> Transaccion</strong></p>
+            <br>
+            <div class="dropdown col-sm-6 rounded-3 centeritem">
+                <button id="dropmenu" class="btn col-sm-12 dropdown-toggle Infor" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Ingreso | Egreso
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li onclick="action(0)"><a class="dropdown-item">Ingreso</a></li>
+                    <li onclick="action(1)"><a class="dropdown-item">Egreso</a></li>
+                </ul>
+            </div>
+            <br>
+            <br> 
+            <div class="col-sm-6 centeritem">
+                
+                <form id="form1">
+                    <input id="descrip" name="descrip" class="col-sm-6 form-control Infor" type="text" placeholder="Descripcion">
+                    <br>
+                    <br>
+                    <input id="mont" name="mont" class="col-sm-6 form-control Infor" type="number" placeholder="Monto">
+                </form>
+                
+            </div>           
+            <br>
+            <input type="button" class="btn btn-light agregar" value="Agregar" onclick="agregar()">
+        </div>
+        <div class="col-sm-6 text-center accion">
+            <br>
+            <br>
+            <div class="row col-sm-9 centeritem">
+                <div id="btnaccion1" class="col-sm-6 py-2 rounded-start" onclick="lista(0)"><strong>Ingresos</strong></div>
+                <div id="btnaccion2" class="col-sm-6 py-2 rounded-end"  onclick="lista(1)"><strong>Egresos</strong></div>
+            </div>
+            <br>
+            <table id="tablaingre" class="table">
+                <tr>
+                    
+                </tr>
+            </table>
+            <table id="tablaegre" class="table">
+                <tr>
+                    
+                </tr>                
+            </table>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"> </script>
+    <script src="js/bootstrap.bundle.js"> </script>
+    <script src="js/mainsc.js"></script>
+    
+   
+</body>
+<footer>
+    
+</footer>
